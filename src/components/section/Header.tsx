@@ -1,32 +1,11 @@
-import {
-  NavigationMenu,
-  NavigationMenuList,
-} from "@/components/ui/navigation-menu";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import {
-  ALAM,
-  EDUKASI,
-  GUNUNG,
-  KULINER,
-  OUTBOUND,
-  PANTAI,
-  ROMANTIS,
-  SEJARAH,
-} from "@/data/NavigationMenu";
-import { Menu, ShoppingBasket, User } from "lucide-react";
-import HeaderLogo from "../ui/HeaderLogo";
-import LanguageCta from "../ui/LanguageCta";
-import LocationCta from "../ui/LocationCta";
-import MenuItem from "../ui/MenuItem";
-import SearchInput from "../ui/SearchInput";
-import TooltipButton from "../ui/TooltipButton";
+import { ShoppingBasket, User } from "lucide-react";
+import SearchInput from "../Common/SearchInput";
+import TooltipButton from "../Common/TooltipButton";
+import HeaderLogo from "../Header/HeaderLogo";
+import LanguageCta from "../Header/LanguageCta";
+import LocationCta from "../Header/LocationCta";
+import NavDesktop from "../Header/NavDesktop";
+import NavMobile from "../Header/NavMobile";
 export default function Header() {
   return (
     <header className="py-4 font-plusJakarta">
@@ -37,22 +16,9 @@ export default function Header() {
           <LanguageCta />
           <LocationCta />
           {/* NavigationMenuMobile */}
-          <div className="md:hidden">
-            <Sheet>
-              <SheetTrigger>
-                <Menu className="h-8 w-8" />
-              </SheetTrigger>
-              <SheetContent>
-                <SheetHeader>
-                  <SheetTitle>Are you absolutely sure?</SheetTitle>
-                  <SheetDescription>
-                    This action cannot be undone. This will permanently delete
-                    your account and remove your data from our servers.
-                  </SheetDescription>
-                </SheetHeader>
-              </SheetContent>
-            </Sheet>
-          </div>
+          <nav className="md:hidden">
+            <NavMobile />
+          </nav>
         </div>
       </div>
       <div className="container flex flex-col gap-3 pt-4 lg:pt-0">
@@ -61,18 +27,8 @@ export default function Header() {
           <LocationCta mobile />
         </div>
         <div className="flex justify-center gap-6 pt-5 md:justify-between lg:items-center lg:pt-0">
-          <NavigationMenu className="hidden md:flex">
-            <NavigationMenuList className="md:grid md:grid-cols-4 lg:flex">
-              <MenuItem navLink={GUNUNG} />
-              <MenuItem navLink={PANTAI} />
-              <MenuItem navLink={KULINER} />
-              <MenuItem navLink={OUTBOUND} />
-              <MenuItem navLink={SEJARAH} />
-              <MenuItem navLink={EDUKASI} />
-              <MenuItem navLink={ROMANTIS} />
-              <MenuItem navLink={ALAM} />
-            </NavigationMenuList>
-          </NavigationMenu>
+          {/* NavigationMenuDesktop */}
+          <NavDesktop />
           <div className="flex gap-3 md:items-center">
             <TooltipButton
               tooltip="Cart"
