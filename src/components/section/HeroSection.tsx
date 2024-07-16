@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="container pb-10 pt-4 font-plusJakarta lg:pt-10">
       <div className="flex flex-col-reverse justify-between lg:flex-row">
-        <div className="relative z-10 flex flex-col gap-7 sm:-mt-8 md:mx-auto md:-mt-20 md:w-full md:max-w-fit lg:mt-0">
+        <div className="relative z-10 flex flex-col gap-7 sm:mx-auto sm:-mt-8 sm:w-full sm:max-w-fit md:-mt-20 lg:mt-0">
           <div className="space-y-4">
             <div className="w-full max-w-fit rounded-full bg-muted1 px-3 py-2 text-sm font-bold text-primary1">
               ✈ • Explore the wonderful indonesia!

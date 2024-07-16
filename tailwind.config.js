@@ -19,6 +19,7 @@ module.exports = {
     extend: {
       fontFamily: {
         plusJakarta: ["Plus Jakarta Sans", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
       },
       colors: {
         primary1: "#4475F2",
