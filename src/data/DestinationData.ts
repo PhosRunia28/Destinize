@@ -2,7 +2,7 @@ export const destinations = [
   {
     image: "./image/destination/destination1.png",
     destinationName: "Raja Ampat",
-    country: "bali",
+    country: "Bali",
   },
   {
     image: "./image/destination/destination2.png",

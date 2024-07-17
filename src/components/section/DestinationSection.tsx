@@ -5,10 +5,10 @@ import { Button } from "../ui/button";
 
 export default function DestinationSection() {
   return (
-    <section className="container space-y-14 pb-20">
+    <section className="container space-y-14 pb-32 md:pb-40">
       <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
         <div className="space-y-2 font-manrope">
-          <h5 className="text-sm font-black uppercase tracking-wide text-primary1">
+          <h5 className="text-sm font-black uppercase tracking-wide text-primary1 lg:text-base">
             DESTINASI FAVORIT
           </h5>
           <h3 className="text-2xl font-black sm:text-3xl lg:text-4xl">
