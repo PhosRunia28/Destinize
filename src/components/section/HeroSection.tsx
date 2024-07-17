@@ -1,7 +1,10 @@
 import { ArrowRight, Play } from "lucide-react";
+import { useState } from "react";
+import ModalVideoDemo from "../Common/ModalVideoDemo";
 import { Button } from "../ui/button";
 
 export default function HeroSection() {
+  const [openVideo, setOpenVideo] = useState(false);
   return (
     <section className="container pb-10 pt-4 font-plusJakarta lg:pt-10">
       <div className="flex flex-col-reverse justify-between lg:flex-row">
@@ -28,7 +31,10 @@ export default function HeroSection() {
               Mulai Sekarang <ArrowRight className="h-4 w-4" />
             </Button>
             <div className="flex items-center gap-2">
-              <button className="group w-full max-w-fit rounded-full border border-primary1 bg-white p-3 shadow-2xl transition hover:bg-primary1">
+              <button
+                className="group w-full max-w-fit rounded-full border border-primary1 bg-white p-3 shadow-2xl transition hover:bg-primary1"
+                onClick={() => setOpenVideo(!openVideo)}
+              >
                 <Play className="h-5 w-5 text-primary1 group-hover:text-white" />
               </button>
               <p className="text-sm font-bold text-gray">Play Demo</p>
@@ -41,6 +47,8 @@ export default function HeroSection() {
           className="relative -z-10 mx-auto -mt-16 w-full max-w-[90vw] bg-cover bg-center sm:max-w-[70vw] md:-mt-32 lg:-mt-40 lg:max-w-[50vw] xl:-mt-44"
         />
       </div>
+      {/* demo video */}
+      <ModalVideoDemo openVideo={openVideo} setOpenVideo={setOpenVideo} />
     </section>
   );
 }
