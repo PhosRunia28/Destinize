@@ -1,25 +1,17 @@
 import MapCard from "../Common/MapCard";
+import TitleCenter from "../Common/TitleCenter";
 
 export default function MapSection() {
   return (
     <section className="container pb-36 font-manrope">
       <div className="flex flex-col gap-12">
-        <div className="flex flex-col gap-6 text-center">
-          <h5 className="font-manrope text-sm font-black uppercase tracking-widest text-primary1 lg:text-base">
-            CARI TEMPAT WISATA
-          </h5>
-          <h3
-            className="mx-auto max-w-3xl text-3xl font-black sm:text-4xl md:text-[2.5rem] lg:text-[2.7rem]"
-            style={{ lineHeight: 1.3 }}
-          >
-            Cari Tempat Wisata Didekatmu
-          </h3>
-          <p className="mx-auto w-full max-w-2xl text-sm leading-[1.8]">
-            Fitur ini memungkinkan kamu untuk mencari tempat wisata atau tempat
+        <TitleCenter
+          subtitle="CARI TEMPAT WISATA"
+          title="Cari Tempat Wisata Didekatmu"
+          description="Fitur ini memungkinkan kamu untuk mencari tempat wisata atau tempat
             yang sedang populer di daerah kamu dengan begitu kamu akan selalu
-            update dan gak kudet lagi 👍🏻
-          </p>
-        </div>
+            update dan gak kudet lagi 👍🏻"
+        />
         <img
           src="./image/map.png"
           alt="map"
