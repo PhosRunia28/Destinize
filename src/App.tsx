@@ -1,4 +1,5 @@
 import AirlinesSection from "./components/section/AirlinesSection";
+import BlogAndBanner from "./components/section/BlogAndBanner";
 import DestinationSection from "./components/section/DestinationSection";
 import Header from "./components/section/Header";
 import HeroSection from "./components/section/HeroSection";
@@ -13,6 +14,7 @@ function App() {
       <DestinationSection />
       <ReservationSection />
       <MapSection />
+      <BlogAndBanner />
     </>
   );
 }
