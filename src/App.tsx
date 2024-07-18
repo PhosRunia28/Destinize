@@ -5,6 +5,7 @@ import Header from "./components/section/Header";
 import HeroSection from "./components/section/HeroSection";
 import MapSection from "./components/section/MapSection";
 import ReservationSection from "./components/section/ReservationSection";
+import TestimonialSection from "./components/section/TestimonialSection";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
       <ReservationSection />
       <MapSection />
       <BlogAndBanner />
+      <TestimonialSection />
     </>
   );
 }
