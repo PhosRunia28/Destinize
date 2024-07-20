@@ -1,3 +1,4 @@
+import AccordionSection from "./components/section/AccordionSection";
 import AirlinesSection from "./components/section/AirlinesSection";
 import BlogAndBanner from "./components/section/BlogAndBanner";
 import DestinationSection from "./components/section/DestinationSection";
@@ -17,6 +18,7 @@ function App() {
       <MapSection />
       <BlogAndBanner />
       <TestimonialSection />
+      <AccordionSection />
     </>
   );
 }
