@@ -32,7 +32,7 @@ export default function Footer() {
           <FooterLink menu={ABOUT} />
           <FooterLink menu={SUPPORT} />
           <FooterLink menu={FAQ} />
-          <ul className="flex w-full flex-col items-center gap-5 sm:flex-row md:col-span-3 md:justify-center md:gap-8 lg:justify-between lg:gap-0">
+          <ul className="flex w-full flex-col items-center lg:items-end gap-5 sm:flex-row md:col-span-3 md:justify-center md:gap-8 lg:justify-between lg:gap-0">
             {LINK_FOOTER_BOTTOM.map((link, index) => (
               <li key={index}>
                 <a
